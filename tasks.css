@@ -1,0 +1,80 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fff;
+    align-content: normal;
+    padding: 30px;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    height: 135vh;
+    font-size: large;
+}
+
+p{
+    text-align: justify;
+    text-indent: 25px;
+}
+
+h4{
+    font-size: x-large;
+    text-align: center;
+    justify-content: center;
+}
+
+form {
+    background-color: #B0E0E6;
+    padding: 50px;
+    border-radius: 90px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    height: 100%;
+}
+
+input[type="Fullname"]{
+    width: 50%;
+    padding: 5px;
+}
+
+input[type="Email"]{
+    width: 50%;
+    padding: 5px;
+}
+
+input[type="Age"]{
+    width: 10%;
+    padding: 5px;
+}
+
+input[type="number"]{
+    width: 30%;
+    padding: 5px;
+}
+
+input[type="date"]{
+    width: 30%;
+    padding: 5px;
+}
+
+select{
+    width: 75%;
+    padding: 5px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 5px;
+    float: justify; 
+ }
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+

@@ -1,0 +1,172 @@
+/*------------------------Form------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+form   {
+    font-family: Helvetica;
+}
+.form-header {
+    background-image: url(header.svg);
+    background-size: cover;
+    background-position: center;
+    width: 48%;
+    height: 25vh;
+    margin-top: 50px;
+}
+
+.form-container {
+    border-radius: 2px;
+    background-color: white;
+    padding:  35px;
+    width: 883px;
+    padding-top:20px;
+    
+}
+
+.title {
+    font-family: Helvetica;
+    margin-bottom:0;
+}
+
+
+.line1 {
+    border: 1px solid;
+    width:70%;
+    text-align:left;
+    margin-left:0;
+    margin-bottom:0;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    background-image: url(bar.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(2px);
+  }
+
+.tag {
+  font-family: Helvetica;
+    margin-bottom:8px;
+    font-size: 18px;
+}
+
+
+.form-footer {
+  background-image: url(footer.svg);
+  background-size: cover;
+  background-position: center;
+  width: 48%;
+  height: 10vh;
+  margin-bottom: 50px;
+}
+
+/*------------------------Client Information------------------------*/
+
+.form-container .first-section-client{
+  display: grid;
+  grid-template-columns: 250px 250px 283px;
+  column-gap: 15px;
+  padding-left: 0px;
+}
+
+.form-container .second-section-client{
+  display: grid;
+  grid-template-columns: 520px 280px;
+  column-gap: 15px;
+}
+
+
+/*------------------------Event Information------------------------*/
+
+.form-container .first-section-event div{
+  float: left;
+  column-gap: 15px;
+  font-size: 18px;
+  font-family: Helvetica;
+  padding-right: 15px;
+  padding-left: 10px;
+}
+
+.form-container .second-section-event div{
+  float: left;
+  column-gap: 15px;
+  font-size: 18px;
+  font-family: Helvetica;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.form-container .third-section-event div{
+  float: right;
+  column-gap: 15px;
+  font-size: 18px;
+  font-family: Helvetica;
+  padding-right: 80px;
+  padding-left: 80px;
+}
+
+.form-container .fourth-section-event div{
+  float: left;
+  font-size: 18px;
+  font-family: Helvetica;
+  padding-right: 80px;
+  padding-left: 1px;
+
+}
+input[type="text"],
+input[type="date"]{
+  height: 30px;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: Helvetica;
+}
+
+select {
+  padding: 3px;
+  font-size: 18px;
+  width: 165px;
+  font-family: Helvetica;
+}
+
+input[type="time"] {
+  padding: 0px;
+  font-size: 18px;
+  width: 168px;
+  font-family: Helvetica;
+}
+
+textarea {
+  padding: 0px;
+  font-size: 15px;
+  width: 820px;
+  height: 150px;
+  font-family: Helvetica;
+}
+
+
+input[type="SUBMIT"] {
+  padding: 0px;
+  font-size: 18px;
+  width: 168px;
+  margin-left: 40%;
+  font-family: Helvetica;
+  cursor: pointer;
+  text-align: center;
+  padding: 15px 32px;
+  background-color: black;
+  border-radius: 30px;
+  color: white;
+  font-weight: 100px;
+  font-size: 15px;
+  font-family: 'Helvetica';
+
+}
+

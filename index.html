@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thirst Mobile Bar Booking Form</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>  
+            <div class ="form-header"></div>
+            <div class ="form-container">
+            <form method="post"
+            action="https://script.google.com/macros/s/AKfycbzsDr2NTYurmMutuEw9_-qwidqHlvWUOB5kE_ikwDgaI6za4saQy2ceStLGU4alNri5jg/exec" id="booking-form">
+            <div class="client-container">
+                <h1 class = "title">CLIENT INFORMATION</h1>
+                <hr class ="line1">
+            </div>
+            <h4 class ="tag">NAME&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; EMAIL</h4>
+            <div class="first-section-client">
+                <input type="text" id="firstname" name="First Name" 
+                title="Please enter a valid first name" required>
+                <input type="text" id="lastname" name="Last Name"
+                title="Please enter a valid last name"  required>
+                <input type="text" id="email" name="Email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" 
+                title="Please enter a valid email address" placeholder="example@gmail.com" required>
+                <label for="First Name">First Name</label>
+                <label for="Last Name">Last Name</label>
+            </div>
+            <h4 class ="tag">VENUE ADDRESS&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;CONTACT NUMBER</h4>
+            <div class="second-section-client">
+                <input type="text" id="venue" name="Venue Address" 
+                title="Please enter a valid address format" placeholder=" Lot no, Street, Barangay, City">
+                <input type="text" id="contactnum" name="Contact Number"
+                title="Please enter a valid contact number"  placeholder = "+63 00 0000 000" required>
+            </div>
+            <div class="event-container">
+                <h1 class = "title">EVENT INFORMATION</h1>
+                <hr class ="line1">
+            </div>
+            <h4 class ="tag">TYPES OF EVENT&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;SETUP TIME  &emsp;&emsp;&emsp;&emsp;&emsp;SERVING TIME</h4>
+            <div class="first-section-event">
+                <div>
+                <input type="radio" id="birthday" name="Type of Event" value="Birthday Party">
+                <label class="button">Birthday Party</label><br>
+                <input type="radio" id="holiday" name="Type of Event" value="Holiday Party">
+                <label class="button">Holiday Party</label><br>
+                <input type="radio" id="theme" name="Type of Event" value="Theme  Party">
+                <label class="button">Theme Party</label><br>
+                <input type="radio" id="wedding" name="Type of Event" value="Wedding">
+                <label class="button">Wedding<span class="checkmark"></span></label><br>
+                <input type="radio" id="celeb" name="Type of Event" value="Celebration of Life">
+                <label class="button">Celebration of Life<span class="checkmark"></span></label><br>
+                </div>
+                <div>
+                <input type="radio" id="corporate" name="Type of Event" value="Corporate Event">
+                <label class="buttn">Corporate Event</label><br>
+                <input type="radio" id="formal" name="Type of Event" value="Formal Event">
+                <label class="button">Formal Event</label><br>
+                <input type="radio" id="reunion" name="Type of Event" value="Reunion Party">
+                <label class="button">Reunion Party</label><br>
+                <input type="radio" id="sports" name="Type of Event" value="Sports Event">
+                <label class="button">Sports Event<span class="checkmark"></span></label><br>
+                <input type="radio" id="homecoming" name="Type of Event" value="Homecoming Party">
+                <label class="button">Homecoming<span class="checkmark"></span></label><br>
+                </div>
+                <div class="second-section-event">   
+                    &emsp;&nbsp;&nbsp;&nbsp;<input type="time" id="setup" name="Setup Time">
+                    &emsp;&nbsp;&nbsp;&nbsp;<input type="time" id="serving" name="Serving Time">
+                </div>
+                <div class="third-section-event"></div>
+                </br><h4 class ="tag">&emsp;&emsp;&nbsp;&nbsp;DATE OF EVENT&emsp;&emsp;&emsp;&nbsp;&nbsp;NUMBER OF PAX</h4>
+                <div>
+                &emsp;&nbsp;&nbsp; <input type="date" id="dateofevent" name="Date of Event">
+                </div>
+                <div>
+                    &nbsp;&nbsp;<select name="Number Of Pax" id="pax">
+                      <option value="50pax">50 pax</option>
+                      <option value="75 pax">75 pax</option>
+                      <option value="100 pax">100 pax</option>
+                      <option value="150 pax">200 pax</option>
+                      <option value="150 pax">300 pax</option>
+                      <option value="150 pax">400 pax</option>
+                      <option value="150 pax">500 pax</option>
+                    </select>   
+                </div>
+                <div class="fourth-section-event">  
+                <h4 class ="tag">&emsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;PAYMENT OPTIONS &nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;PACKAGE OPTIONS</h4>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div>
+                        &nbsp;&nbsp;<input type="checkbox" id="cash" name="Payment Options" value="Cash">
+                        <label for="checkbox1">Cash</label>&nbsp;
+                        <input type="checkbox" id="bank" name="Payment Options" value="Bank Transfer">
+                        <label for="checkbox2">Bank Transfer</label>&nbsp;
+                        <input type="checkbox" id="gcash"  name="Payment Options" value="GCash">
+                        <label for="checkbox3">GCash</label>
+                    </div>
+                    <div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="unli" name="Package Options" value="Unlimited">
+                        <label for="checkbox1">Unlimited</label>
+                        <input type="checkbox" id="slush" name="Package Options" value="Slush">
+                        <label for="checkbox2">Slush</label>
+                        <input type="checkbox" id="beer" name="Package Options" value="Beer">
+                        <label for="checkbox3">Beer</label>
+                    </div>
+                </div>
+                </div>
+                </br></br></br></br></br>
+                <div class="fifth-section-event"></div>
+                </br><h4 class ="tag"></br>ANYTHING ELSE DO YOU WANT TO TELL US?</h4>
+                <div>
+                    <textarea id="comments" name="Comments" rows="4" cols="110" placeholder="                    
+            Feel free to leave message or suggestions for the betterment of our service and for the success of your event."></textarea>
+                   <div class ="submit-section">
+                   </br></br><input type="submit" value="BOOK NOW">
+                </div>
+                </div>
+                </div>
+             </div>
+            </div>
+            </div>
+            <div class ="form-footer"></div>
+        </form>
+          
